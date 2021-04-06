@@ -1,0 +1,3 @@
+It is still in development, this is a previous version because
+I have to test the way the bot looks for the words in the json,
+ in addition to adding more

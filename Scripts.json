@@ -1,0 +1,127 @@
+{
+    "/help": [
+        "/help emoji, /help image, /help rol, /database"
+    ],
+    "/database": [
+        "Successfully connected to the remote database, use /tree"
+    ],
+
+    "/help emoji": [
+        "example: :Sad:, use /emoji list "
+    ],
+    "/emoji list": [
+        " :grinning: :smile: :laughing: :joy: :relaxed: :wink: :heart_eyes: :kissing: :sunglasses: :pensive: :cry: :angry: :neutral: :sad:"
+    ],
+
+
+
+    ":grinning:": [
+        "😃"
+    ],
+    ":smile:": [
+        "😊"
+    ],
+    ":laughing:": [
+        "🤣"
+    ],
+    ":joy:": [
+        "😂"
+    ],
+    ":relaxed:": [
+        "😌"
+    ],
+    ":wink:": [
+        "😉"
+    ],
+    ":heart_eyes:": [
+        "😍"
+    ],
+    ":kissing:": [
+        "😘"
+    ],
+    ":sunglasses:": [
+        "😎"
+    ],
+    ":pensive:": [
+        "😔"
+    ],
+    ":cry:": [
+        "😭"
+    ],
+    ":angry:": [
+        "😡"
+    ],
+    ":neutral:": [
+        "😐︎"
+    ],
+    ":sad:": [
+        "😢"
+    ],
+    ":vixen:": [
+        "🦊"
+    ],
+
+    
+
+    "hello": [
+        "Hello, welcome, nice to meet you"
+    ],
+    "how are you?": [
+        "Very well, and you?"
+    ],
+    "very well": [
+        "lol"
+    ],
+    "good to see you": [
+        "You too"
+    ],
+    "nice to see you": [
+        "You too"
+    ],
+    "good morning": [
+        "Good morning..."
+    ],
+    "good afternoon": [
+        "Good afternoon too"
+    ],
+    "good evening": [
+        "Hi, good evening too"
+    ],
+
+
+    "how are things?": [
+        "Very well"
+    ],
+    "how are you doing?": [
+        "Very well, thanks"
+    ],
+
+
+
+    "where are you from?": [
+        "from...hmmm, other planet, lol"
+    ],        
+    "is anything wrong?": [
+        "No, everything is perfect! "
+    ],  
+
+ 
+    "I'm sorry": [
+        "Do not worry 😉"
+    ],    
+    "sorry": [
+        "Do not worry 😉"
+    ],
+    "I am sorry": [
+        "Do not worry 😊"
+    ],           
+
+
+    "what are you?": [
+        "I'm an artificial intelligence * A.I *"
+    ],
+    "you are a": [
+        "I'm a girl.\n🦊: but not so fast, I'm an artificial intelligence\n👤: *:SadPepo:*\n🦊: ikr\n🦊: *Sadcat.png* "
+    ],
+    ". ": []
+}

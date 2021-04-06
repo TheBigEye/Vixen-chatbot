@@ -1,0 +1,6 @@
+Python 3.8.6 64-bits
+
+Modules
+- time (pip install time)
+- tkinter (pip install tkinter, pip install pyttk)
+- difflib (pip install difflib, or, pip install cdifflib)
