@@ -1,5 +1,5 @@
 # Vixen-chatbot
-A chatbot made in python, with a GUI made in Tkinter, Ttk y JSON
+A chatbot made in python, with a GUI made in Tkinter, Ttk and database in JSON
 
 
 Python modules needed in requirements.txt
