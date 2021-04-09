@@ -13,9 +13,6 @@ from tkinter import *
 from tkinter import ttk
 from tkinter.ttk import Progressbar
 
-from PIL import Image, ImageTk
-from playsound import playsound
-
 Main = Tk()
 
 Cursor_User = "👤: "
@@ -34,18 +31,38 @@ InfoMenu_BG = "white"
 
 
 # Tree diagram
-with open("Assets/Scripts/Tree", "r", encoding="UTF-8") as Archive_tree:
-    Tree = Archive_tree.read()
+with open("Assets/Objects/Tree", "r", encoding="UTF-8") as Archive_Tree:
+    Tree = Archive_Tree.read()
+
+# Fox 
+with open("Assets/Objects/Fox", "r", encoding="UTF-8") as Archive_Fox:
+    Fox = Archive_Fox.read()  
+
 
 
 # Python logo
-with open("Assets/Scripts/images/Python_logo", "r", encoding="UTF-8") as Archive_logo:
-    Python_logo = Archive_logo.read()
-
+with open("Assets/Objects/Logos/Python_logo", "r", encoding="UTF-8") as Python:
+    Python_logo = Python.read()
 
 # Anonymous mask logo
-with open("Assets/Scripts/images/Mask", "r", encoding="UTF-8") as Archive_Mask:
-    Mask_logo = Archive_Mask.read()    
+with open("Assets/Objects/Logos/Mask_logo", "r", encoding="UTF-8") as Mask:
+    Mask_logo = Mask.read()    
+
+
+###################################################################################################################
+
+# Logo
+Logo_image = "Assets/Images/Logo.png"
+
+
+# Nornal face
+Normal_Face = "Assets/Images/States/fox.png"
+
+# Nornal face
+Closed_Eyes_Face = "Assets/Images/States/fox_2.png"
+
+# Joy face
+Joy_Face = "Assets/Images/States/fox_3.png"
 
 ###################################################################################################################
 
@@ -145,6 +162,7 @@ class System:
         self.message_session.config(state="disabled")
 
     def reply_to_you(self, event=None):
+
         def ProgressBarAnim():
 
             progress["value"] = 0
@@ -184,7 +202,7 @@ class System:
             Again += 1
 
         elif Again == 4:
-            reply = Cursor_Fox + "hmm ok \n"
+            reply = Cursor_Fox + "Could we talk more?\n"
             Again += 1
 
         elif Again == 5:
@@ -194,34 +212,73 @@ class System:
         else:
             reply = Cursor_Fox + "Good \n"
 
-        # Commands ##########################################################################################################
 
-        # hi
-        if self.Message_Entry.get().lower() == "hi":
+
+        # Messages ##########################################################################################################
+
+        # MSG equals Message 
+        MSG = self.Message_Entry.get().lower()
+
+        if (MSG == "/test"):
+
+            reply = Cursor_Fox + "test" + "\n"
+
+        # Hi, hello
+        if (MSG == "hi"):
 
             reply = Cursor_Fox + "Hi, welcome" + "\n"
 
-        # programming
-        if (
-            self.Message_Entry.get().lower()
-            == "what programming language are you made in?"
-        ):
+
+        # F
+        if (MSG == "f"):
+
+            reply = Cursor_Fox + "F x2" + "\n"
+
+
+        # lol
+        if (MSG == "lol"):
+
+            reply = Cursor_Fox + "lol, xd" + "\n"
+
+        
+        # XD
+        if (MSG == "xd"):
+
+            reply = Cursor_Fox + "xddd" + "\n"            
+
+
+        # are you furry?
+        if (MSG == "are you furry?"):
+
+            reply = Cursor_Fox + "\n" + Fox + "\n" + Cursor_Fox + "Yes, i'm furry" + "\n"
+
+
+        # what programming language are you made in?
+        if MSG == "what programming language are you made in?":
 
             reply = Python_logo + "\n" + Cursor_Fox + "In Python" + "\n"
 
-        # /Start command
-        if self.Message_Entry.get().lower() == "/start":
+
+
+        # Commands ##########################################################################################################
+
+        CMD = self.Message_Entry.get().lower()
+
+        # /Mask command
+        if (CMD == "/start"):
 
             ProgressBarAnim()
 
             reply = Cursor_Fox + "\n" + Mask_logo + "\n"            
 
+
         # /Tree command
-        if self.Message_Entry.get().lower() == "/tree":
+        if (CMD == "/tree"):
 
             ProgressBarAnim()
 
             reply = Cursor_Fox + "Use /cd FILENAME" + "\n" + Tree + "\n"
+
 
         # /open commands
         if self.Message_Entry.get().lower() == "/cd documents":
@@ -258,13 +315,40 @@ Main.wm_attributes("-alpha", 0.96)
 
 # Chat Chat
 System(Main)
+
+#if System(Main).Message_Entry.get().lower() == "animate":
+#    Logo_IMG = tkinter.PhotoImage(file=Closed_Eyes_Face)
+
 Main.geometry("525x725")
 
+FrameCount = 2
+Logo_IMG = [PhotoImage(file='Assets/Images/Fox.gif',format = 'gif -index %i' %(i)) for i in range(FrameCount)]
 
-# logo
-Logo_IMG = tkinter.PhotoImage(file="Assets/Images/Logo.png")
-Logo = Label(Main, width=60, height=60, image=Logo_IMG)
-Logo.place(x=565, y=40)
+Phase = 0
+def update(ind):
+
+    global Delay 
+    Delay = 1000
+    Frame = Logo_IMG[ind]
+    ind += 1
+
+    if ind == FrameCount:
+        ind = 0
+    
+    if ind == 1:
+        Delay = 512
+    else:
+        Delay = 5000
+
+    Logo = Label(Main, width=59, height=60)
+    Logo.place(x=564, y=40)    
+    Logo.configure(image = Frame)
+
+    Main.after(Delay, update, ind)
+
+
+Main.after(0, update, 0)
+
 
 
 # text="LT.Fox Vixen"
@@ -276,7 +360,6 @@ Logo.place(x=565, y=40)
 def Click_Open():
     Main.geometry("675x725")
     time.sleep(0.1)
-
     Expand_Button_1.place(x=1024, y=1024)
     Expand_Button_2.place(x=498, y=690)
 
@@ -319,5 +402,6 @@ Expand_Button_2 = Button(
 Expand_Button_2.place(x=1024, y=1024)
 
 ###################################################################################################################
+
 
 Main.mainloop()
