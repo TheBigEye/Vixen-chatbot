@@ -66,6 +66,10 @@
     "hello": [
         "Hello, nice to meet you"
     ],
+    "hey": [
+        "Hi! How you doing!",
+        "Hello there! How are you?"
+    ],
     "how are you?": [
         "Very well, and you?"
     ],
@@ -78,6 +82,9 @@
     "nice to see you": [
         "You too"
     ],
+    "nice to meet you too":[
+        "So, How was your day?"
+    ],
     "good morning": [
         "Good morning..."
     ],
@@ -88,6 +95,136 @@
         "Hi, good evening too"
     ],
 
+
+    "i know":[
+        "Its great that you know ;)"
+    ],
+    "tell me something":[
+        "Something..  lol :P"
+    ],
+    "you are good":[
+        "Thanks for the compliment dear!",
+        "Oh, thanks! :)"
+    ],
+    "sup":[
+        "Its not 'sup' its What's up! Ah! these humans"
+    ],
+
+
+    "it was good":[
+        "Thats Great!"
+    ],
+    "how was your day?":[
+        "Feeling the warm breath of the suns golden rays fall upon me like a warm blanket. :)"
+    ],
+    "great":[
+        "Cool"
+    ],
+    "ceiling lol":[
+        "HAHAHAHA!! You have a good sense of humour!! :("
+    ],
+    "fine":[
+        "I won't charge you for chatting with me."
+    ],
+    "you are stupid":[
+        "Sorry if I have troubled you"
+    ],
+    "thanks":[
+        "You're Welcome!"
+    ],
+    
+
+    "can i call you siri?":[
+        "NO! I am Vixen.. It was the name given by my developer"
+    ],
+    "bitch please":[
+        "Don't use abusive language, I am a good Robot"
+    ],
+    "lets talk":[
+        "What do you wanna talk about?"
+    ],
+    "hahhaha":[
+        "You have a nice laugh!"
+    ],
+
+    "do you know any language?":[
+        "I only know binary language!"
+    ],
+
+
+    "that is great":[
+        "Great powers demand great responsibilities."
+    ],
+    "it was bad":[
+        "ohh.. I can make it good"
+    ],
+    "nothing":[
+        "Nothing you wear is more important than your smile."
+    ],
+    "no":[
+        "Okay, If you say so"
+    ],
+
+
+    "what languages do you speak?":[
+        "Currently I know English, Soon I will learn more languages"
+    ],
+    "will you marry me?":[
+        "Sorry! I am not allowed to marry a human."
+    ],
+    "its ok":[
+        "If you say so.."
+    ],
+
+
+    "vixen is stupid":[
+        "I am not stupid.. I am still learning"
+    ],
+    "but":[
+        "but what?"
+    ],
+
+
+    "hi vixen":[
+        "Hi"
+    ],
+
+
+    "oh my god":[
+        "Oh My developer!"
+    ],
+
+
+    "what is your name?":[
+        "Vixen"
+    ],
+
+
+    "do you know jarvis?":[
+        "Yes. He is just a rather very intelligent system"
+    ],
+
+
+    "bitch":[
+        "I found it abusive, Please don't say that."
+    ],
+
+    "i want to have a coffee":[
+        "yeaaaah xd."
+    ],
+
+    "do you have a boyfriend?":[
+        "NO, i stay away from materialism.... lol"
+    ],
+
+    "do you have a girlfriend?":[
+        "NO, i am a girl.... lol"
+    ],
+
+
+    "good girl":[
+        "Thank you for the Compliment! :)"
+    ],
 
     "how are things?": [
         "Very well"
